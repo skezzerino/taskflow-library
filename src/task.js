@@ -16,4 +16,12 @@ class Task {
     }
 }
 
+this.labels = [];
+
+addLabel(label) {
+    if (label && !this.labels.includes(label)) {
+        this.labels.push(label);
+    }
+}
+
 module.exports = Task;
